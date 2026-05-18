@@ -1,0 +1,28 @@
+services:
+  app:
+    image: webdevops/php-apache:8.2
+
+    container_name: laravel-app
+
+    restart: unless-stopped
+
+    working_dir: /app
+
+    volumes:
+      - ./:/app
+
+    ports:
+      - "127.0.0.1:9802:80"
+
+    env_file:
+      - .env
+
+    environment:
+      WEB_DOCUMENT_ROOT: /app/public
+
+    networks:
+      - infra_net
+
+networks:
+  infra_net:
+    external: true

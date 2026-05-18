@@ -59,8 +59,8 @@ Aplikasi ini dibuat sebagai bahan studi kasus untuk belajar pengembangan web men
 
 1. **Clone repository**
    ```bash
-   git clone https://github.com/ihsanzakyf/humanresourcesapp.git
-   cd humanresourcesapp
+   git clone https://github.com/abdulfalaq5/hris-simple.git
+   cd hris-simple
    ```
 
 2. **Install dependency Laravel**
