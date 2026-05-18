@@ -2,7 +2,7 @@ services:
   app:
     image: webdevops/php-apache:8.2
 
-    container_name: laravel-app
+    container_name: hris-simple
 
     restart: unless-stopped
 
