@@ -2,7 +2,7 @@ services:
   app:
     image: webdevops/php-apache:8.2
 
-    container_name: hris-simple
+    container_name: hris-simple-php
 
     restart: unless-stopped
 
@@ -26,7 +26,7 @@ services:
   node:
     image: node:22-alpine
 
-    container_name: laravel-node
+    container_name: hris-simple-node
 
     working_dir: /app
 
